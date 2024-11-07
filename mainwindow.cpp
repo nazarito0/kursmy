@@ -97,7 +97,7 @@ void MainWindow::on_pushButton_2_clicked()
 void MainWindow::on_action_triggered()
 {
     QMessageBox msgBox;
-    msgBox.setText("Дана програма виконана студентом групи КІ-412 Кавчаком Назарієм");
+    msgBox.setText("Дану програму виконав студент групи КІ-412 Партика Назар");
     msgBox.setStandardButtons(QMessageBox::Close );
     msgBox.setDefaultButton(QMessageBox::Save);
     int ret = msgBox.exec();
