@@ -20,6 +20,8 @@ public:
 private slots:
     void on_pushButton_clicked();
 
+    void on_exportButton_clicked();
+
 private:
     Ui::Window *ui;
      database   *db;

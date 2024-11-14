@@ -34,3 +34,9 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    nono.qrc
+
+QMAKE_CXXFLAGS += -DQT_AUTO_SCREEN_SCALE_FACTOR=1
+QT_SCALE_FACTOR=1.5

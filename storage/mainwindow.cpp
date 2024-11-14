@@ -2,6 +2,8 @@
 #include "ui_mainwindow.h"
 #include "QTextEdit"
 #include "QMessageBox"
+#include <QApplication>
+#include <QPushButton>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -97,8 +99,18 @@ void MainWindow::on_pushButton_2_clicked()
 void MainWindow::on_action_triggered()
 {
     QMessageBox msgBox;
-    msgBox.setText("Дану програму виконав студент групи КІ-412 Партика Назар");
+    msgBox.setText("Дана програма виконана студентом групи КІ-412 Партикою Назаром 2024р.");
     msgBox.setStandardButtons(QMessageBox::Close );
     msgBox.setDefaultButton(QMessageBox::Save);
     int ret = msgBox.exec();
+}
+
+void MainWindow::on_exportButton_clicked()
+{
+  close();
+}
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    close();
 }

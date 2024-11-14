@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QSqlQuery>
+#include <QMessageBox>
 
 /* My includes */
 #include <database.h>
@@ -32,7 +33,9 @@ private slots:
     void on_pushButton_2_clicked();
 
     void on_action_triggered();
+    void on_exportButton_clicked();
 
+    void on_pushButton_3_clicked();
 private:
     Ui::MainWindow  *ui;
     database        *db;
@@ -41,6 +44,7 @@ private:
 private:
     void createUI(const QStringList &headers);
     void update();
+
 
 };
 

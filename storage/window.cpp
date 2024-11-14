@@ -76,3 +76,8 @@ void Window::on_pushButton_clicked()
 }
 
 
+
+void Window::on_exportButton_clicked()
+{
+    close();
+}
