@@ -11,7 +11,7 @@
 *.dylib
 
 # Qt-es
-object_script.*.Release
+
 object_script.*.Debug
 *_plugin_import.cpp
 /.qmake.cache
@@ -177,7 +177,7 @@ compile_commands.json
 .uic/
 .clangd/
 /*-debug/
-/*-release/
+
 /build*/
 /dist/gdb/*.gz
 /dist/gdb/python/
@@ -194,7 +194,7 @@ compile_commands.json
 /libexec/
 debug/
 ipch/
-release/
+
 tmp/
 .cache/clangd/
 # ignore both a directory as well as a symlink
@@ -342,5 +342,5 @@ tmp/
 
 # qbs builds
 /*-debug/
-/*-release/
+
 /out/
